@@ -1,0 +1,56 @@
+{
+  "name": "@arcusnetwork/x402-client",
+  "version": "0.1.0",
+  "description": "Pay x402 APIs with USDC on Arc, from code or the command line",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcusnetwork/x402-client.git"
+  },
+  "homepage": "https://arcusnetwork.io",
+  "keywords": [
+    "x402",
+    "arc",
+    "usdc",
+    "payments",
+    "agents",
+    "fetch"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "x402": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "cli": "tsx src/cli.ts",
+    "example": "tsx examples/agent.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@x402/core": "^2.26.0",
+    "@x402/evm": "^2.26.0",
+    "@x402/fetch": "^2.26.0",
+    "dotenv": "^17.4.2",
+    "viem": "^2.56.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
