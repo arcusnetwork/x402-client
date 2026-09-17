@@ -4,7 +4,7 @@ Pay [x402](https://www.x402.org) APIs with USDC on [Arc](https://arc.network), f
 Built for agents: a drop-in `fetch`, a per-payment cap, and a hard budget.
 
 Pairs with [arcusnetwork/x402-server](https://github.com/arcusnetwork/x402-server). Payments are
-settled by the [Arcus facilitator](https://facilitator.arcusnetwork.io), which pays the gas.
+settled by the [Arcus facilitator](https://facilitator.arcusnetwork.co), which pays the gas.
 
 ```
 fetch(url) ──▶ 402 + PAYMENT-REQUIRED
